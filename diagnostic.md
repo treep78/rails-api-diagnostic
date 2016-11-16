@@ -5,74 +5,74 @@ Place your responses inside the fenced code-blocks where indicated by comments.
 What is the purpose of a backend?
 
 ```bash
-// your response here
+To store, manage and protect data and to allow communication between users.
 ```
 
 Which layer in the MVC pattern is used by the controller to fetch data?
 
 ```bash
-// your response here
+The controller layer
 ```
 
 Which layer in the MVC pattern communicates with the model?
 
 ```bash
-// your response here
+The Model layer
 ```
 
 Why don't we use views in our interpretation of the MVC pattern?
 
 ```bash
-// your response here
+Because modern dev tools are capable of iterpretting returned data without a need for the View layer
 ```
 
 What does C.R.U.D stand for?
 
 ```bash
-// your response here
+Create, Read, Update, Destroy. More porgrammatically: Post, Get, Patch, Delete.
 ```
 
 In which part of the MVC pattern can we find C.R.U.D actions?
 
 ```bash
-// your response here
+In the Controller layer.
 ```
 
 List at least 5 standard rails actions that C.R.U.D requests correspond to?
 
 ```bash
-// your response here
+Post, Get, Patch, Delete, and index.
 ```
 
 A user action fires a `GET` request for `/people/1`. Explain in detail each step
 required for data to be returned to the client. (bullet points or ordered list)
 
 ```bash
-// your response here
+The routes file picks up on 'GET' and calls the 'Index 'function in the 'people controler' for the index '1'. The controller then returns the values under the 'people model' associated with the instance of people (possibly an index of Person) with an 'id' of 1.
 ```
 
 What is the command to generate a new rails-api app?
 
 ```bash
-// your response here
+bundle exec rails bd:create |I must have this wrong|
 ```
 
 What is the command to start an instance of a rails server?
 
 ```bash
-// your response here
+rails server
 ```
 
 What are the commands to drop, create and migrate a database from the command
 line? (3 bullet points)
 
 ```bash
-// your response here
+bundle exec rake db:drop db:create db:migrate
 ```
 
 What is the command to scaffold a pet with a name and age attributes (hint:
 Also think of the data types for each attribute)?
 
 ```bash
-// your response here
+rails g model pet name:string age:integer
 ```
